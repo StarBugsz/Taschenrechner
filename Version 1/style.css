@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500;600&display=swap");
+
+@import url("https://unpkg.com/css.gg@2.0.0/icons/css/database.css");
+@import url("https://unpkg.com/css.gg@2.0.0/icons/css/math-divide.css");
+
+body {
+  font-family: "Signika Negative", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  appearance: none;
+  border: none;
+  background-color: rgb(15, 0, 53);
+  color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(10, 2, 83);
+}
+
+div {
+  color: white;
+}
+
+.button {
+  appearance: none;
+  border: none;
+  background-color: rgb(11, 10, 10);
+  cursor: none;
+  size: 50px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 26% auto 26%;
+  grid-template-rows: 50vh 10vh 40vh;
+  background-color: rgb(11, 10, 10);
+  column-gap: 10px;
+}
+
+#display {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+
+.top-side {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.main-container {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.left-side {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr ;
+}
+
+.right-side {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.icons-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

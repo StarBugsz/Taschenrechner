@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taschenrechner</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="index.js"></script>
+    <script
+      type="text/javascript"
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div id="display"></div>
+      <div class="main-container">
+        <button onclick="appendOperation(7)">7</button>
+        <button onclick="appendOperation('8')">8</button>
+        <button onclick="appendOperation('9')">9</button>
+        <button onclick="appendOperation('4')">4</button>
+        <button onclick="appendOperation('5')">5</button>
+        <button onclick="appendOperation('6')">6</button>
+        <button onclick="appendOperation('1')">1</button>
+        <button onclick="appendOperation('2')">2</button>
+        <button onclick="appendOperation('3')">3</button>
+        <button onclick="appendOperation('0')">0</button>
+        <button onclick="appendOperation('.')">.</button>
+        <button onclick="appendOperation('-')">(-)</button>
+      </div>
+      <div class="left-side">
+        <button onclick="appendOperation('=')">=</button>
+        <button onclick="appendOperation('trig')">trig</button>
+        <button onclick="appendOperation('^')">^</button>
+        <button onclick="appendOperation('\u00B2')">x&sup2;</button>
+        <button onclick="appendOperation('e^x')">e<sup>x</sup></button>
+        <button onclick="appendOperation('.')">10<sup>x</sup></button>
+        <button onclick="appendOperation('(')">(</button>
+        <button onclick="appendOperation(')')">)</button>
+      </div>
+      <div class="right-side">
+        <button class="icons-button"><i class="gg-database"></i></button>
+        <button>BIB</button>
+        <button onclick="appendOperation('*')">x</button>
+        <button class="icons-button"><i class="gg-math-divide"></i></button>
+        <button onclick="appendOperation('+')">+</button>
+        <button onclick="appendOperation('-')">-</button>
+        <button onclick="calculateResult()" id="result">enter</button>
+      </div>
+      <div class="top-side">
+        <button>ctrl</button>
+        <button>shift</button>
+        <button>var</button>
+        <button onclick="appendOperation('\u03A0')">&pi;</button>
+        <button>,</button>
+        <button>x</button>
+        <button>y</button>
+        <button>z</button>
+        <button>menu</button>
+        <button onclick="deleteLast()">del</button>
+      </div>
+    </div>
+  </body>
+</html>
